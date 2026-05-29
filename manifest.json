@@ -1,0 +1,30 @@
+{
+"manifest_version": 3,
+"name": "Full Page Screenshot",
+"version": "1.0",
+"description": "Capture full page screenshots and download as PNG.",
+
+"permissions": [
+"activeTab",
+"scripting",
+"tabs",
+"downloads"
+],
+
+"host_permissions": [
+"<all_urls>"
+],
+
+"background": {
+"service_worker": "background.js"
+},
+
+"action": {
+"default_popup": "popup.html",
+"default_title": "Screenshot Tool"
+},
+
+"icons": {
+"128": "icon.png"
+}
+}
